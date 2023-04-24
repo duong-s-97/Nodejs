@@ -1,11 +1,11 @@
 let mongoose = require("mongoose");
 
 let users = new mongoose.Schema({
-  first: {
+  first_name: {
     type: String,
     required: true,
   },
-  last: {
+  last_name: {
     type: String,
     required: true,
   },
@@ -13,7 +13,7 @@ let users = new mongoose.Schema({
     type: String,
     required: true,
   },
-  user: {
+  user_name: {
     type: String,
     required: true,
   },

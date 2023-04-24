@@ -20,3 +20,15 @@ exports.save = (req, res) => {
       res.send(err);
     });
 };
+
+exports.list = (req, res) => {
+  Users.find({})
+  .then((rs) => {
+    res.render("users/list", {
+      items: rs,
+    });
+  })
+  .catch((err) => {
+    res.send(err);
+  });
+};
