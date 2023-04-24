@@ -5,7 +5,6 @@ let mongoose = require("mongoose");
 class Database {
   constructor() {
     this.__connect();
-    
   }
   __connect() {
     mongoose

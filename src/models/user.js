@@ -8,7 +8,6 @@ let users = new mongoose.Schema({
   last_name: {
     type: String,
     required: true,
-    
   },
   tel: {
     type: String,
@@ -22,7 +21,6 @@ let users = new mongoose.Schema({
     type: String,
     required: true,
   },
-
 });
 
 module.exports = mongoose.model("users", users);

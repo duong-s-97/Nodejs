@@ -1,7 +1,7 @@
 const Users = require("../models/user");
 
 exports.get = function (req, res) {
-    res.render("users/home")
+  res.render("users/home");
 };
 
 exports.createForm = (req, res) => {
@@ -23,13 +23,12 @@ exports.save = (req, res) => {
 
 exports.list = (req, res) => {
   Users.find({})
-  .then((rs) => {
-    res.render("users/list", {
-      items: rs,
+    .then((rs) => {
+      res.render("users/list", {
+        items: rs,
+      });
+    })
+    .catch((err) => {
+      res.send(err);
     });
-  })
-  .catch((err) => {
-    res.send(err);
-    
-  });
 };
