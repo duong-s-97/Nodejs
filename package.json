@@ -16,6 +16,7 @@
     "mongoose": "^7.0.3",
     "mongose": "^0.0.2-security",
     "nodemon": "^2.0.22"
+    
   },
   "description": ""
 }

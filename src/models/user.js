@@ -8,6 +8,7 @@ let users = new mongoose.Schema({
   last_name: {
     type: String,
     required: true,
+    
   },
   tel: {
     type: String,

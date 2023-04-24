@@ -21,5 +21,5 @@ app.use("/user", userRouter);
 
 // app route
 app.get("/", function (req, res) {
-  res.render('users/home')
+  res.render('users/home');
 });
